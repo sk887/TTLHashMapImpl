@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 
-public class TTLHashMap<K,V>{
+public class TTLHashMap<K,V> implements Map<K, V>{
 
     private final HashMap<K, V> store = new HashMap<>();
     private final HashMap<K, Long> timestamps = new HashMap<>();
